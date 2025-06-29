@@ -1,0 +1,15 @@
+// stylesecciones.scss
+
+// 1. Herramientas primero (no generan CSS por sí solas)
+@import 'variables';
+@import 'mixins';
+
+// 2. Estilos base y de layout
+@import 'base';
+@import 'layout';
+
+// 3. Componentes
+@import 'components';
+
+// 4. Estilos específicos de páginas
+@import 'pages';

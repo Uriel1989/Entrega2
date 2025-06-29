@@ -1,0 +1,46 @@
+// _layout.scss
+
+.contenido {
+  position: relative;
+  z-index: $z-index-contenido;
+  padding: 50px;
+  color: $color-texto-contenido;
+  text-align: center;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr; // Móvil primero: 1 columna
+  gap: 10px;
+  padding: 10px;
+
+  // Anidamos la media query para tabletas
+  @media (min-width: $bp-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // Anidamos la media query para escritorio
+  @media (min-width: $bp-desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  z-index: $z-index-footer;
+
+  // Anidamos el estilo para la <p> dentro del footer
+  p {
+    color: $color-secundario;
+    font-size: 20px;
+  }
+  
+  // Anidamos la media query del footer
+  @media (min-width: $bp-desktop) {
+    padding: 20px 40px;
+  }
+}

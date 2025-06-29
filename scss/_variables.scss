@@ -1,0 +1,24 @@
+// _variables.scss
+
+// --- Colores ---
+$color-primario: rgb(86, 241, 8);
+$color-secundario: red;
+$color-fondo-box: black;
+$color-texto-contenido: white;
+
+// --- Tipografía ---
+$fuente-titulo: century;
+$fuente-base: Arial, Helvetica, sans-serif;
+$fuente-impacto: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+// --- Rutas ---
+$ruta-imagenes: '../imagenes/';
+
+// --- Z-index (capas) ---
+$z-index-fondo: -1;
+$z-index-contenido: 1;
+$z-index-footer: 1000;
+
+// --- Breakpoints para Media Queries ---
+$bp-tablet: 600px;
+$bp-desktop: 1024px;

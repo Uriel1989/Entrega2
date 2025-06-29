@@ -1,0 +1,34 @@
+// _pages.scss
+
+.index {
+  @include fondo-seccion('fondoprincipal.jpg');
+}
+
+.rpg { @include fondo-seccion('rpg.jpg'); }
+.fondo-rpg { @include fondo-fijo-pantalla('rpg.jpg'); }
+
+.terror { @include fondo-seccion('terror.jpg'); }
+.fondo-terror { @include fondo-fijo-pantalla('terror.jpg'); }
+
+.peleas { @include fondo-seccion('terror.jpg'); } // Usaba la misma imagen que terror
+.fondo-peleas { @include fondo-fijo-pantalla('peleas.jpg'); }
+
+.disparos { @include fondo-seccion('disparos.webp'); }
+.fondo-disparos { @include fondo-fijo-pantalla('disparos.webp'); }
+
+.carreras {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+.fondo-carreras {
+  @include fondo-fijo-pantalla('carreras.webp');
+  margin: 0;
+  padding: 0;
+}
+
+.contacto {
+  @include fondo-seccion('correo.jpg');
+  font-family: $fuente-impacto;
+}

@@ -1,0 +1,23 @@
+// _mixins.scss
+
+// Mixin para los fondos de sección que ocupan todo el ancho
+@mixin fondo-seccion($nombre-imagen) {
+  background-image: url($ruta-imagenes + $nombre-imagen);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+// Mixin para los fondos fijos que cubren toda la pantalla
+@mixin fondo-fijo-pantalla($nombre-imagen) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url($ruta-imagenes + $nombre-imagen);
+  background-size: cover;
+  background-position: center;
+  z-index: $z-index-fondo;
+}

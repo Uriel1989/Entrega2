@@ -1,0 +1,18 @@
+// _base.scss
+
+p {
+  color: $color-secundario;
+  font-family: $fuente-base;
+  font-size: 1rem;
+  margin: 0 10px 15px;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 1.1rem;
+  }
+
+  @media (min-width: $bp-desktop) {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto 60px 30px;
+  }
+}

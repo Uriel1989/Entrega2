@@ -1,139 +1,20 @@
-/* Estilos y posicionamientos */
-
-* {
-    box-sizing: border-box; /* Aplica border-box globalmente para un modelo de caja consistente */
+p {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin: 0 10px 15px;
 }
-
-.box-model{
-    
-    max-width: 100%; /* Cambiado de width: 100% */
-    height: 20vh;
-    background-color: black;
-    border: 5px solid black;
-    padding: 20px;
-    margin: 30px auto; /* Centrado horizontalmente, solo margen vertical */
-    color: rgb(86, 241, 8);
-    font-family: century;
-    text-align: center;
-    text-decoration: underline;
-
+@media (min-width: 600px) {
+  p {
+    font-size: 1.1rem;
+  }
 }
-
-.box-model-secciones{
-    
-    max-width: 100%; /* Cambiado de width: 100% */
-    height: 20vh;
-    padding: 20px;
-    margin: 30px auto; /* Centrado horizontalmente, solo margen vertical */
-    color: rgb(86, 241, 8);
-    font-family: century;
-    text-align: center;
-    text-decoration: underline;
-
-}
-
-.index {
-    background-image: url(../imagenes/fondoprincipal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* Eliminado width: 100%; height: auto; */
-}
-
-
-.rpg {
-    background-image: url(../imagenes/rpg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* Eliminado width: 100%; height: auto; */
-}
-
-.fondo-rpg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../imagenes/rpg.jpg);
-  background-size: cover;
-  background-position: center;
-  z-index: -1; /* Lo pone detrás de todo */
-}
-
-.terror {
-    background-image: url(../imagenes/terror.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* Eliminado width: 100%; height: auto; */
-}
-
-.fondo-terror {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../imagenes/terror.jpg);
-  background-size: cover;
-  background-position: center;
-  z-index: -1; /* Lo pone detrás de todo */
-}
-
-.peleas {
-    background-image: url(../imagenes/terror.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* Eliminado width: 100%; height: auto; */
-}
-
-.fondo-peleas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../imagenes/peleas.jpg);
-  background-size: cover;
-  background-position: center;
-  z-index: -1; /* Lo pone detrás de todo */
-}
-
-.disparos {
-    background-image: url(../imagenes/disparos.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* Eliminado width: 100%; height: auto; */
-}
-
-.fondo-disparos {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../imagenes/disparos.webp);
-  background-size: cover;
-  background-position: center;
-  z-index: -1; /* Lo pone detrás de todo */
-}
-
-.carreras{
-    margin: 0;
-    padding: 0;
-    /* Eliminado width: 100%; height: auto; */
-}
-
-.fondo-carreras {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../imagenes/carreras.webp);
-  background-size: cover;
-  background-position: center;
-  z-index: -1; /* Lo pone detrás de todo */
-  margin: 0;
-  padding: 0;
+@media (min-width: 1024px) {
+  p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto 60px 30px;
+  }
 }
 
 .contenido {
@@ -144,134 +25,102 @@
   text-align: center;
 }
 
-.contacto {
-    background-image: url(../imagenes/correo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* Eliminado width: 100%; height: auto; */
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-p{
-    color: red;
-    margin: auto; /* Ajustado para eliminar márgenes horizontales que causan desbordamiento */
-    font-size: 20;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Ordenamiento del menu */
-
-.lista-horizontal li {
-            display: inline-block;
-            padding-right: 10px; 
-            list-style-type: none; 
-            text-align: center;
-            
- }
-
-.caja {
-    width: 100%;
-    padding: 5px;
-    margin: 10px;
-    font-family: century;
-    text-align: center;
-    text-decoration: underline;
-    line-height: normal; /* importante */
-}
-
-/* Implementacion de flex y grid */
-
-.contenedor{
-    display: flex;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-}
-
-/* Ordenamiento del pie de pagina */
-
-footer {
-  position: fixed; /* Fija el footer en la pantalla */
-  bottom: 0;       /* Lo coloca en la parte inferior */
-  right: 0;        /* Lo alinea a la derecha */
-  padding: 10px;   /* Espaciado interno opcional */
-  z-index: 1000;   /* Asegura que esté por encima de otros elementos */
-}
-
-footer p {
-    color: red;
-    font-size: 20px;
-}
-
-/* Media Query */
-
-/* Adaptado para celulares*/
-.contenedor {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Adaptado para tabletas y computadoras de escritorio */
-@media (min-width: 1024px) {
-    .contenedor {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-/* Contenedor de videos: 1 por fila */
 .contenedor {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
   padding: 10px;
 }
+@media (min-width: 600px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .contenedor {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}
 
-/* Iframes fluidos: toman ancho completo y mantienen proporción 16:9 */
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 1000;
+}
+footer p {
+  color: red;
+  font-size: 20px;
+}
+@media (min-width: 1024px) {
+  footer {
+    padding: 20px 40px;
+  }
+}
+
+.box-model, .box-model-secciones {
+  width: 100%;
+  height: 20vh;
+  padding: 20px;
+  margin: 30px;
+  color: rgb(86, 241, 8);
+  font-family: century;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.box-model {
+  background-color: black;
+  border: 5px solid black;
+  font-size: 1.6rem;
+  margin: 20px 10px;
+}
+@media (min-width: 600px) {
+  .box-model {
+    font-size: 2rem;
+    margin: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .box-model {
+    font-size: 2.4rem;
+    margin: 40px 60px;
+  }
+}
+
+.caja {
+  width: 100%;
+  padding: 5px;
+  margin: 10px;
+  font-family: century;
+  text-align: center;
+  text-decoration: underline;
+  line-height: normal;
+}
 .caja iframe {
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16/9;
   display: block;
 }
 
-/* Menú vertical: ancho completo y centrado */
-header nav .lista-horizontal {
+.lista-horizontal {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
-
 .lista-horizontal li {
   width: 100%;
   text-align: center;
   margin-bottom: 8px;
 }
-
-/* Titulares y párrafos compactos */
-h1.box-model {
-  font-size: 1.6rem;
-  margin: 20px auto; /* Centrado horizontalmente */
-}
-
-p {
-  font-size: 1rem;
-  margin: 0 auto 15px; /* Ajustado para solo margen vertical y centrado horizontal */
-  max-width: 100%; /* Añadido para asegurar que no se desborde */
-}
-
-/* Tablets pequeñas */
 @media (min-width: 600px) {
-  /* Pasamos a 2 columnas */
-  .contenedor {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  /* Menú horizontal */
-  header nav .lista-horizontal {
+  .lista-horizontal {
     flex-direction: row;
     justify-content: center;
   }
@@ -279,44 +128,124 @@ p {
     width: auto;
     margin: 0 12px;
   }
-
-  /* Espaciados un poco mayores */
-  h1.box-model {
-    font-size: 2rem;
-    margin: 30px auto; /* Centrado horizontalmente */
-    }
-    p {
-      font-size: 1.1rem;
-      margin: 0 auto 30px; /* Centrado horizontalmente */
-    }
-  }
-
-/* Escritorio estándar */
-@media (min-width: 1024px) {
-  /* 3 columnas de videos */
-  .contenedor {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  /* Alineamos elementos del contenedor con espacio entre ellos */
-  .contenedor {
-    justify-items: center;
-  }
-
-  /* Titular y párrafo dimensionados para pantallas grandes */
-  h1.box-model {
-    font-size: 2.4rem;
-    margin: 40px auto; /* Centrado horizontalmente */
-  }
-
-  p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: auto; /* Centrado horizontalmente */
-  }
-
-  /* Footer: padding extra para no tapar contenido */
-  footer {
-    padding: 20px 40px;
-  }
 }
+
+.index {
+  background-image: url("../imagenes/fondoprincipal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.rpg {
+  background-image: url("../imagenes/rpg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.fondo-rpg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../imagenes/rpg.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.terror {
+  background-image: url("../imagenes/terror.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.fondo-terror {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../imagenes/terror.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.peleas {
+  background-image: url("../imagenes/terror.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.fondo-peleas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../imagenes/peleas.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.disparos {
+  background-image: url("../imagenes/disparos.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.fondo-disparos {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../imagenes/disparos.webp");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.carreras {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+.fondo-carreras {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../imagenes/carreras.webp");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+}
+
+.contacto {
+  background-image: url("../imagenes/correo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/*# sourceMappingURL=stylesecciones.css.map */
